@@ -1,0 +1,31 @@
+.gen{
+    padding: 60px;
+    margin: 10%;
+    width:80%;
+}
+
+.FormItem{
+    width: 220px;
+}
+
+.smallFlex{
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 500px) {
+    .smallFlex {
+        flex-direction: column;
+        
+    }
+
+    .gen{
+        padding: 90px;
+        margin: 0;
+        width: auto;
+    
+    }
+
+    .FormItem{
+        width: auto;
+    }
+  }
