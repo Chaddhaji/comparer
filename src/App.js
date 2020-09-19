@@ -8,13 +8,13 @@ import Footer from './footer';
 
 
 function App() {
-  console.log(document.location);
+  // console.log(document.location);
   return (
 
     <HashRouter basename="/">
     <div className="App">
       <Route path="/generator" component={Generator}/>
-      <Route path="/:i" component={Home}/>
+      <Route path="/" component={Home}/>
 
       <Footer />
     </div>
