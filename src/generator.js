@@ -65,7 +65,7 @@ export default class Generator extends Component {
     //console.log("dECRYPT");
     //console.log(originalText); // 'my message'
     this.setState((state) => {
-      return { counter: state.counter + 1, linkgenerated: window.location.origin+"?id=" + ciphertext };
+      return { counter: state.counter + 1, linkgenerated: window.location.href.replace('generator','')+"?id=" + ciphertext };
     });
 
     // this.setState=({linkgenerated :"http://localhost:3000/"+ciphertext});
