@@ -8,13 +8,13 @@ import Footer from './footer';
 
 
 function App() {
+  console.log(document.location);
   return (
 
     <BrowserRouter>
     <div className="App">
-      <Route exact path="/generator" component={Generator}/>
-      <Route exact path="/:i" component={Home}/>
-      <Route exact path="/" component={Home}/>
+      <Route path="/generator" component={Generator}/>
+      <Route path="/:i" component={Home}/>
 
       <Footer />
     </div>
